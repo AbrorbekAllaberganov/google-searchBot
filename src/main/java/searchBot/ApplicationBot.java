@@ -38,6 +38,8 @@ public class ApplicationBot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
     }
+    private final String USERNAME = "GoogledanTopBot";
+    private final String TOKEN = "2122784533:AAGnW5kvbMOIcM0zDRx-LnwNIUDZ64O2qAA";
 
     @Override
     public String getBotUsername() {
@@ -49,10 +51,7 @@ public class ApplicationBot extends TelegramLongPollingBot {
         return this.TOKEN;
     }
 
-    private final String USERNAME = "GoogledanTopBot";
-    private final String TOKEN = "";
     static Map<Long, Integer> user_action = new HashMap<>();
-
 
     @Override
     public void onUpdateReceived(Update update) {
