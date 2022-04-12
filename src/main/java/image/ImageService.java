@@ -16,7 +16,7 @@ public class ImageService {
         Gson gson = new Gson();
         OkHttpClient client = new OkHttpClient();
 
-        //REQUES
+        //REQUEST
 
 
         try {
