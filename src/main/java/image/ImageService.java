@@ -12,40 +12,11 @@ import java.lang.reflect.Type;
 
 public class ImageService {
 
-//    public static void main(String[] args) {
-//        getss();
-//    }
-//    public static void getss() {
-//        OkHttpClient client = new OkHttpClient();
-//
-//        Request request = new Request.Builder()
-//                .url("https://google-search3.p.rapidapi.com/api/v1/images/q=Messi")
-//                .get()
-//                .addHeader("x-rapidapi-host", "google-search3.p.rapidapi.com")
-//                .addHeader("x-rapidapi-key", "b8aa608876mshb8a6efa7542cd60p1bbb41jsn03c0ccd23533")
-//                .build();
-//
-//        Response response = null;
-//        try {
-//            response = client.newCall(request).execute();
-//        System.out.println(response.body().string());
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
-
-
     public ImageResponse getImages(String theme) {
         Gson gson = new Gson();
         OkHttpClient client = new OkHttpClient();
 
-        Request request = new Request.Builder()
-                .url("https://google-search3.p.rapidapi.com/api/v1/images/q="+theme)
-                .get()
-                .addHeader("x-rapidapi-host", "google-search3.p.rapidapi.com")
-                .addHeader("x-rapidapi-key", "b8aa608876mshb8a6efa7542cd60p1bbb41jsn03c0ccd23533")
-                .build();
+        //REQUES
 
 
         try {
